@@ -25,5 +25,17 @@ class experience(models.Model):
 class skill(models.Model):
     skills = models.CharField(max_length=100)
 
+    icon_type = {
+        ('flaticon-ideas','flaticon-ideas'),
+        ('flaticon-flasks','flaticon-flasks'),
+        ('flaticon-analysis','flaticon-analysis'),
+        ('flaticon-ux-design','flaticon-ux-design'),
+        ('flaticon-web-design','flaticon-web-design'),
+        ('flaticon-idea','flaticon-idea'),
+        ('flaticon-innovation','flaticon-innovation'),
+    }
+
+    icon = models.CharField(max_length=100, choices=icon_type, default='flaticon-ideas')
+
     def __str__(self):
         return "{}. {}".format(self.id, self.skills)

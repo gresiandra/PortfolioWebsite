@@ -39,7 +39,7 @@
 	        <ul class="navbar-nav nav ml-auto">
 	          <li class="nav-item"><a href="#home-section" class="nav-link"><span>Home</span></a></li>
 	          <li class="nav-item"><a href="#about-section" class="nav-link"><span>About</span></a></li>
-	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Resume</span></a></li>
+	          <li class="nav-item"><a href="#resume-section" class="nav-link"><span>Experience</span></a></li>
 	          <li class="nav-item"><a href="#skills-section" class="nav-link"><span>Skills</span></a></li>
 	          <li class="nav-item"><a href="#contact-section" class="nav-link"><span>Contact</span></a></li>
 	        </ul>
@@ -60,10 +60,10 @@
 	          	</div>
 		          <div class="one-forth d-flex  align-items-center ftco-animate" data-scrollax=" properties: { translateY: '70%' }">
 		          	<div class="text">
-		          		<span class="subheading">Hello!</span>
-			            <h1 class="mb-4 mt-3">I'm <span>Gresiandra Putra</span></h1>
+		          		<span class="subheading">Apa Kabar!</span>
+			            <h1 class="mb-4 mt-3">I'm <span>Gresiandra</span></h1>
 			            <h2 class="mb-4">A Freelance Web Developer</h2>
-			            <p><a href="#" class="btn btn-primary py-3 px-4">Download CV</a>
+			            <p><a href="mailto:gresiandra@gmail.com" class="btn btn-primary py-3 px-4">Email Me</a>
 		            </div>
 		          </div>
 	        	</div>
@@ -88,7 +88,7 @@
 		          	<h1 class="big">About</h1>
 		            <h2 class="mb-4">About Me</h2>
 					<p>“Faithless To be yourself in a world that is constantly trying to make you something else is the greatest accomplishment.”</p>
-					<p>– Ralph Waldo Emerson, Philosopher</p>					
+					<p>― Ralph Waldo Emerson, Philosopher</p>					
 					
 					{% for me in aboutme %}
 
@@ -169,7 +169,7 @@
 					<div class="col-md-4 text-center d-flex ftco-animate">
 						<a class="services-1">
 							<span class="icon">
-								<i class="flaticon-ux-design"></i>
+								<i class="{{myskill.icon}}"></i>
 							</span>
 							<div class="desc">
 								<h3 class="mb-5">{{myskill.skills}}</h3>
@@ -190,7 +190,7 @@
             <h1 class="big big-2">Contact</h1>
             <h2 class="mb-4">Contact Me</h2>
 			<p>"People generally are more interested in my work when they get to know me. Serious collectors like to get not just a painting but a piece of the artist."</p>
-			<p>Toni Onley, Artist</p>
+			<p>― Toni Onley, Artist</p>
           </div>
         </div>
 
