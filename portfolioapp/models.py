@@ -8,7 +8,7 @@ class aboutme(models.Model):
     DateofBirth = models.DateField()
     Address = models.CharField(max_length=50)
     Email = models.EmailField(max_length=254)
-    Phone = models.CharField(max_length=50)
+    Github = models.CharField(max_length=50)
 
     def __str__(self):
         return "{}. {}".format(self.id, self.Name)
@@ -20,7 +20,7 @@ class experience(models.Model):
     Description = models.TextField()
 
     def __str__(self):
-        return "{}. {}".format(self.id, self.Years)
+        return "{}. {}".format(self.id, self.Position)
 
 class skill(models.Model):
     skills = models.CharField(max_length=100)

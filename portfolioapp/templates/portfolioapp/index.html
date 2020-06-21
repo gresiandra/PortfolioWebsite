@@ -98,7 +98,7 @@
 							<li class="d-flex"><span>Date of birth:</span> <span>{{me.DateofBirth}}</span></li>
 							<li class="d-flex"><span>Address:</span> <span>{{me.Address}}</span></li>
 							<li class="d-flex"><span>Email:</span> <span>{{me.Email}}</span></li>
-							<li class="d-flex"><span>Phone: </span> <span>{{me.Phone}}</span></li>
+							<li class="d-flex"><span>Github: </span> <span>{{me.Github}}</span></li>
 						</ul>
 						
 					{% endfor %}
@@ -106,10 +106,10 @@
 
 		          </div>
 		        </div>
-	          <div class="counter-wrap ftco-animate d-flex mt-md-3">
-              <div class="text">
-                <p><a href="#" class="btn btn-primary py-3 px-3">Download CV</a></p>
-              </div>
+	          <div class="counter-wrap ftco-animate d-flex mt-md-5">
+				<div class="text">
+					<p><a href="{% static 'file/Gresiandra.pdf' %}" download class="btn btn-primary py-3 px-3">Download CV</a></p>
+				</div>
 	          </div>
 	        </div>
         </div>
@@ -143,11 +143,6 @@
 				{% endfor %}
 				
     		</div>
-    		<div class="row justify-content-center mt-5">
-    			<div class="col-md-6 text-center ftco-animate">
-    				<p><a href="#" class="btn btn-primary py-4 px-5">Download CV</a></p>
-    			</div>
-    		</div>
     	</div>
     </section>
 		
@@ -172,7 +167,7 @@
 								<i class="{{myskill.icon}}"></i>
 							</span>
 							<div class="desc">
-								<h3 class="mb-5">{{myskill.skills}}</h3>
+								<h3 class="mb-4">{{myskill.skills}}</h3>
 							</div>
 						</a>
 					</div>
