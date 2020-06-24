@@ -66,7 +66,7 @@ hr {
   -webkit-box-sizing: content-box;
   box-sizing: content-box;
   height: 0;
-  overflow: visible; }
+  overflow: hidden; }
 
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
@@ -444,7 +444,7 @@ pre {
 
 .pre-scrollable {
   max-height: 340px;
-  overflow-y: scroll; }
+  overflow-y: hidden; }
 
 .container {
   width: 100%;
