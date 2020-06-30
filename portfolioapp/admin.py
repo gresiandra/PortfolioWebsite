@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from .models import aboutme, experience, skill
+from .models import aboutme, experience, skill, twitterInstagram
 
 # Register your models here.
 # gresiandrasmd, pass:gresiandrasmd123
@@ -8,3 +8,4 @@ from .models import aboutme, experience, skill
 admin.site.register(aboutme)
 admin.site.register(experience)
 admin.site.register(skill)
+admin.site.register(twitterInstagram)
