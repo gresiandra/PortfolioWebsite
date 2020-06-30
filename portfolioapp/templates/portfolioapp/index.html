@@ -207,17 +207,11 @@
             <h2 class="mb-4">Contact Me</h2>
 			<p>"People generally are more interested in my work when they get to know me. Serious collectors like to get not just a painting but a piece of the artist."</p>
 			<p>― Toni Onley, Artist</p>
-			<!-- <p>
-				
-				<h2>{{lon}}</h2>
-				<h2>{{lat}}</h2>
-					
-			</p> -->
           </div>
         </div>
 
 		
-		{% for me in aboutme %}
+		{% for about in aboutme %}
 			
         <div class="row d-flex contact-info mb-5">
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -235,7 +229,7 @@
           			<span class="icon-instagram"></span>
           		</div>
           		<h3 class="mb-4 ">Instagram</h3>
-	            <p><a href="https://www.instagram.com/gresiandraputra/">{{me.Instagram}}</a></p>
+	            <p><a href="https://www.instagram.com/gresiandraputra/">{{about.Instagram}}</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -244,7 +238,7 @@
           			<span class="icon-twitter"></span>
           		</div>
           		<h3 class="mb-4 ">Twitter</h3>
-	            <p><a href="https://twitter.com/gresiandra">{{me.Twitter}}</a></p>
+	            <p><a href="https://twitter.com/gresiandra">{{about.Twitter}}</a></p>
 	          </div>
           </div>
           <div class="col-md-6 col-lg-3 d-flex ftco-animate">
@@ -253,7 +247,7 @@
           			<span class="icon-paper-plane"></span>
           		</div>
           		<h3 class="mb-4">Email Address</h3>
-	            <p><a href="mailto:gresiandra@gmail.com">{{me.Email}}</a></p>
+	            <p><a href="mailto:gresiandra@gmail.com">{{about.Email}}</a></p>
 	          </div>
           </div>
 		</div>
