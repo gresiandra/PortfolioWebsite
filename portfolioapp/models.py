@@ -13,10 +13,6 @@ class aboutme(models.Model):
     def __str__(self):
         return "{}. {}".format(self.id, self.Name)
 
-class twitterInstagram(models.Model):
-    Twitter = models.CharField(max_length=20, default='', null=True)
-    Instagram = models.CharField(max_length=30, default='', null=True)
-
 class experience(models.Model):
     Years = models.CharField(max_length=50)
     Position = models.CharField(max_length=100)
