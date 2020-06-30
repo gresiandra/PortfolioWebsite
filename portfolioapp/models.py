@@ -9,6 +9,10 @@ class aboutme(models.Model):
     Address = models.CharField(max_length=50)
     Email = models.EmailField(max_length=254)
     Github = models.CharField(max_length=50)
+    Twitter = models.CharField(max_length=20)
+    Instagram = models.CharField(max_length=30)
+    ImageCover1 = models.ImageField(upload_to='images/')
+    ImageCover2 = models.ImageField(upload_to='images/')
 
     def __str__(self):
         return "{}. {}".format(self.id, self.Name)
