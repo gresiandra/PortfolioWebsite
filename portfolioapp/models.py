@@ -4,7 +4,7 @@ from django.db import models
 
 class aboutme(models.Model):
     Name = models.CharField(max_length=50)
-    Degree = models.CharField(max_length=50)
+    Title = models.CharField(max_length=50)
     DateofBirth = models.DateField()
     Address = models.CharField(max_length=50)
     Email = models.EmailField(max_length=254)

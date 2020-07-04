@@ -1,7 +1,5 @@
 from django.shortcuts import render
 from .models import aboutme, experience, skill
-import urllib.request as ur
-import json
 
 def index(request):
 
