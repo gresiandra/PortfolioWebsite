@@ -45,11 +45,10 @@
 
 	  {% block main %}
 
-		<section class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5" style="background-image:url(/static/images/background.jpg);">
-			<div class="overlay"></div>
-			<div class="container">
-			  <div class="row no-gutters slider-text js-fullheight align-items-end justify-content-center">
-				<div class="col-md-12 ftco-animate pb-5 mb-3 text-center">
+		<section class="hero-wrap js-fullheight" data-stellar-background-ratio="0.5" style="background-image:url(/static/images/backgrounds.jpg);">
+			<div class="container mt-5">
+			  <div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+				<div class="col-md-12 ftco-animate mt-15 text-center">
 				  <h1 class="mb-3 bread">Gresiandra Putra</h1>
 				  <h4 class="mb-4 breadcrumbs">I am a Web Developer</h4>
 				  <p><a href="mailto:gresiandra@gmail.com" class="btn btn-primary py-3 px-4">Email me</a> <a href="https://www.linkedin.com/in/gresiandra-putra-972b4120/" class="btn btn-white btn-outline-white py-3 px-4">My LinkedIn</a></p>
@@ -68,7 +67,7 @@
     			<div class="col-md-6 col-lg-5 d-flex">
     				<div class="img-about img d-flex align-items-stretch">
     					<div class="overlay"></div>
-	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(/static/images/me2.png);">
+	    				<div class="img d-flex align-self-stretch align-items-center" style="background-image:url(/static/images/me.png);">
 	    				</div>
     				</div>
     			</div>
@@ -84,7 +83,7 @@
 
 						<ul class="about-info mt-4 px-md-0 px-2">
 							<li class="d-flex"><span>Name:</span> <span>{{me.Name}}</span></li>
-							<li class="d-flex"><span>Title:</span> <span>{{me.Title}}</span></li>
+							<li class="d-flex"><span>Degree:</span> <span>{{me.Degree}}</span></li>
 							<li class="d-flex"><span>Date of birth:</span> <span>{{me.DateofBirth}}</span></li>
 							<li class="d-flex"><span>Address:</span> <span>{{me.Address}}</span></li>
 							<li class="d-flex"><span>Email:</span> <span>{{me.Email}}</span></li>
@@ -99,7 +98,7 @@
 	          <div class="counter-wrap ftco-animate d-flex mt-md-5"> 
 				<div class="text">
 					<p class="mb-4">
-						<span>Here's My Curriculum Vitae</span>
+						<h5><span>Here's My Curriculum Vitae</span></h5>
 					</p>
 					<p><a href="{% static 'file/GresiandraPutraCV.pdf' %}" download class="btn btn-primary py-3 px-3">Download CV</a></p>
 				</div>
